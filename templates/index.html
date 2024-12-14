@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stock Aroon Indicator</title>
+</head>
+<body>
+    <h1>Enter Stock Details</h1>
+    <form method="POST">
+        {{ form.csrf_token }}
+        {{ form.symbol.label }} {{ form.symbol(size=20) }} <br>
+        {{ form.start_date.label }} {{ form.start_date(size=20) }} <br>
+        {{ form.end_date.label }} {{ form.end_date(size=20) }} <br>
+        {{ form.submit() }}
+    </form>
+</body>
+</html>
